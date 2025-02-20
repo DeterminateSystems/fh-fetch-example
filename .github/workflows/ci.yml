@@ -19,3 +19,10 @@ jobs:
       contents: read
     with:
       visibility: public
+      runner-map: |
+        {
+          "aarch64-darwin": "macos-latest-xlarge",
+          "aarch64-linux": "UbuntuLatest32Cores128GArm",
+          "x86_64-darwin": "macos-latest-xlarge",
+          "x86_64-linux": "UbuntuLatest32Cores128G"
+        }
